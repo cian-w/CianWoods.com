@@ -35,8 +35,6 @@ a {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-
-
 #profiler img {
   height: 130px;
   width: 130px;
@@ -55,4 +53,26 @@ a {
 
 h1 {
   color: black;
+}
+
+
+
+/* Style for mobile */
+
+@media screen and (max-width : 768px) {
+  #card {
+    position: absolute;
+    left: 30%;
+    text-align: center;
+  }
+
+  #profiler {
+    position: relative;
+    top: -160px;
+  }
+
+  #bio {
+    position: relative;
+    left: 10px;
+  }
 }
