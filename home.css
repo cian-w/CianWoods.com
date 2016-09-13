@@ -2,6 +2,13 @@ body {
 background-color:#FFFFFF;
 }
 
+#menu {
+  position: absolute;
+  top: 20px;
+  left: 95%;
+  cursor: pointer;
+}
+
 ul  {
   position: relative;
   top: 20px;
@@ -60,15 +67,24 @@ h1 {
 /* Style for mobile */
 
 @media screen and (max-width : 768px) {
+  #menu {
+    position: absolute;
+    top: 20px;
+    left: 90%;
+  }
+
   #card {
     position: absolute;
-    left: 30%;
+    top: 300px;
+    left: 5%;
     text-align: center;
+    width: 90%;
   }
 
   #profiler {
     position: relative;
     top: -160px;
+    left: -10px;
   }
 
   #bio {
