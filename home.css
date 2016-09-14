@@ -9,24 +9,6 @@ background-color:#FFFFFF;
   cursor: pointer;
 }
 
-ul  {
-  position: relative;
-  top: 20px;
-  left: 70%;
-  list-style: none;
-  font-size: 19px;
-}
-
-ul li {
-  display: inline;
-  padding-left: 10px;
-}
-
-ul li a {
-  text-decoration: none;
-  color: red;
-  font-weight: bold;
-}
 
 a {
   color: #70D846;
@@ -62,6 +44,33 @@ h1 {
   color: black;
 }
 
+#projects {
+  position: absolute;
+  top: 450px;
+  left: 40%;
+  width: 70px;
+  text-align: center;
+}
+
+#projects img {
+  margin: auto;
+  height: 70px;
+  width: 70px;
+}
+
+#contact {
+  position: absolute;
+  top: 450px;
+  left: 55%;
+  width: 70px;
+  text-align: center;
+}
+
+#contact img {
+  margin: auto;
+  height: 70px;
+  width: 70px;
+}
 
 
 /* Style for mobile */
@@ -84,11 +93,34 @@ h1 {
   #profiler {
     position: relative;
     top: -160px;
-    left: -10px;
+    margin: auto;
   }
 
   #bio {
     position: relative;
-    left: 10px;
+    left: 5%;
   }
+
+  #projects {
+    position: relative;
+    left: 10%;
+  }
+
+  #contact {
+    position: absolute;
+    left: 80%;
+    top: 457px;
+  }
+
+
+}
+
+
+@media screen and (max-width : 414px) {
+
+  #contact {
+    position: absolute;
+    left: 70%;
+  }
+
 }
