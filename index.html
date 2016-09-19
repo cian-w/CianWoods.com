@@ -8,9 +8,11 @@
 </head>
 
   <body>
+    <!--
     <div id='menu'>
       <img src='hamburger.png' alt='menu' height='30px' width='30px'>
     </div>
+    -->
 
 
     <div id='card'>
@@ -27,12 +29,27 @@
     </div>
 
     <div id='projects'>
-      <img src='coding.png'><br><a href='#'>Projects</a>
+      <a href='http://www.github.com/cian-w'><img src='coding.png'><br>Projects</a>
     </div>
 
     <div id='contact'>
-      <img src='email.png'><br><a href='#'>Contact</a>
+      <a href='#'><img src='email.png'><br>Contact</a>
     </div>
+
+    <div id='contact-form-popup'>
+      <div id='contact-form'>
+        <form action="https://formspree.io/cianwoods@me.com" method="POST">
+          <input type="text" name="name" placeholder="Name"><br>
+          <input type="email" name="_replyto" placeholder="Email"><br>
+          <textarea name="message" placeholder="Message" rows="4" cols="50"></textarea><br>
+          <input type="submit" value="Send">
+        </form>
+        <button id='cancel-form'>Cancel</button>
+
+      </div>
+    </div>
+
+
 
 
   </body>
@@ -45,6 +62,18 @@
 
   ga('create', 'UA-37464547-3', 'auto');
   ga('send', 'pageview');
+
+
+
+  $(document).ready(function(){
+    $('#contact').click(function(){
+      $('#contact-form-popup').show();
+    });
+
+    $('#cancel-form').on('click',function(){
+      $('#contact-form-popup').hide();
+    });
+  });
 
 </script>
 </html>
