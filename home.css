@@ -220,4 +220,8 @@ h1 {
     left: 170px;
   }
 
+  #contact-form textarea {
+    width: 95%;
+  }
+
 }
