@@ -195,6 +195,19 @@ h1 {
     top: 457px;
   }
 
+  #contact-form textarea {
+    width: 80%;
+  }
+
+  #cancel-form {
+    position: relative;
+    left: 40px;
+  }
+
+  #contact-form input[type=submit] {
+    position: relative;
+    left: 140px;
+  }
 
 }
 
